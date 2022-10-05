@@ -1,0 +1,151 @@
+Executions Times for Selection Problem Program.
+
+
+Executions for Sort Select.
+
+------------------------------------
+Execution Test, 100000 numbers.
+
+real	0m13.910s
+user	0m11.252s
+sys	0m0.088s
+
+------------------------------------
+Execution Test, 200000 numbers.
+
+real	0m48.038s
+user	0m45.428s
+sys	0m0.064s
+
+------------------------------------
+Execution Test, 300000 numbers.
+
+real	2m5.312s
+user	1m42.656s
+sys	0m0.328s
+
+------------------------------------
+Execution Test, 400000 numbers.
+
+real	3m2.067s
+user	2m59.652s
+sys	0m0.080s
+
+------------------------------------
+Execution Test, 500000 numbers.
+
+real	5m0.303s
+user	4m42.136s
+sys	0m0.300s
+
+------------------------------------
+Execution Test, 600000 numbers.
+
+real	7m48.198s
+user	7m30.760s
+sys	0m0.392s
+
+------------------------------------
+Execution Test, 700000 numbers.
+
+real	10m46.473s
+user	10m25.440s
+sys	0m0.540s
+
+------------------------------------
+Execution Test, 800000 numbers.
+
+real	14m17.117s
+user	13m27.916s
+sys	0m0.944s
+
+------------------------------------
+Execution Test, 900000 numbers.
+
+real	16m20.765s
+user	15m33.768s
+sys	0m1.044s
+
+------------------------------------
+Execution Test, 1000000 numbers.
+
+real	18m58.921s
+user	18m51.472s
+sys	0m0.420s
+
+------------------------------------
+
+Executions for Quick Select.
+
+------------------------------------
+Execution Test, 100000 numbers.
+
+real	0m0.050s
+user	0m0.004s
+sys	0m0.012s
+
+------------------------------------
+Execution Test, 200000 numbers.
+
+real	0m0.080s
+user	0m0.008s
+sys	0m0.016s
+
+------------------------------------
+Execution Test, 300000 numbers.
+
+real	0m0.077s
+user	0m0.012s
+sys	0m0.008s
+
+------------------------------------
+Execution Test, 400000 numbers.
+
+real	0m0.106s
+user	0m0.004s
+sys	0m0.024s
+
+------------------------------------
+Execution Test, 500000 numbers.
+
+real	0m0.111s
+user	0m0.012s
+sys	0m0.016s
+
+------------------------------------
+Execution Test, 600000 numbers.
+
+real	0m0.092s
+user	0m0.008s
+sys	0m0.020s
+
+------------------------------------
+Execution Test, 700000 numbers.
+
+real	0m0.106s
+user	0m0.024s
+sys	0m0.012s
+
+------------------------------------
+Execution Test, 800000 numbers.
+
+real	0m0.106s
+user	0m0.024s
+sys	0m0.004s
+
+------------------------------------
+Execution Test, 900000 numbers.
+
+real	0m0.113s
+user	0m0.024s
+sys	0m0.020s
+
+------------------------------------
+Execution Test, 1000000 numbers.
+
+real	0m0.151s
+user	0m0.016s
+sys	0m0.032s
+
+------------------------------------
+

@@ -1,0 +1,80 @@
+***************************************
+Sequential Timed Executions
+
+-------------------
+Timed Test #1
+
+real	0m49.886s
+user	0m49.828s
+sys	0m0.016s
+
+-------------------
+Timed Test #2
+
+real	0m49.432s
+user	0m49.413s
+sys	0m0.012s
+
+-------------------
+Timed Test #3
+
+real	0m50.325s
+user	0m50.315s
+sys	0m0.000s
+
+
+***************************************
+Parallel Timed Executions
+
+-------------------
+Timed Test #1
+
+real	0m27.470s
+user	0m52.798s
+sys	0m0.008s
+
+-------------------
+Timed Test #2
+
+real	0m26.295s
+user	0m52.397s
+sys	0m0.004s
+
+-------------------
+Timed Test #3
+
+real	0m26.314s
+user	0m52.539s
+sys	0m0.008s
+
+
+
+
+***************************************
+Correct Parallel Timed Executions
+
+-------------------
+Timed Test #1
+./a12timer: line 78: ./: Is a directory
+
+real	0m0.000s
+user	0m0.000s
+sys	0m0.001s
+
+-------------------
+Timed Test #2
+./a12timer: line 82: ./: Is a directory
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+
+-------------------
+Timed Test #3
+./a12timer: line 86: ./: Is a directory
+
+real	0m0.000s
+user	0m0.000s
+sys	0m0.001s
+
+

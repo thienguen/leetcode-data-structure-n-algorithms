@@ -1,0 +1,12 @@
+#!/bin/bash
+# CS302 Assignment 8
+
+if [ -z $1 ]; then
+	echo "Please specify Executable file"
+	exit
+fi
+
+./$1 -p < input.txt > my_output.txt
+diff output.txt my_output.txt 
+
+rm my_output.txt

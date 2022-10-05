@@ -1,0 +1,48 @@
+--------------------------------------------------
+CS 218 - Assignment #9
+
+Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Error, invalid number. Please re-enter.
+Enter X Value (senary): Error, invalid number. Please re-enter.
+Enter X Value (senary): Error, invalid number. Please re-enter.
+Enter X Value (senary): Error, invalid number. Please re-enter.
+Enter X Value (senary): Error, invalid number. Please re-enter.
+Enter X Value (senary): Error, invalid number. Please re-enter.
+Enter X Value (senary): Enter Y Value (senary): Error, invalid number. Please re-enter.
+Enter Y Value (senary): Error, invalid number. Please re-enter.
+Enter Y Value (senary): Error, invalid number. Please re-enter.
+Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Error, invalid number. Please re-enter.
+Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Error, invalid number. Please re-enter.
+Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Error, invalid number. Please re-enter.
+Enter Y Value (senary): Error, invalid number. Please re-enter.
+Enter Y Value (senary): Error, invalid number. Please re-enter.
+Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Error, invalid number. Please re-enter.
+Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Error, invalid number. Please re-enter.
+Enter X Value (senary): Enter Y Value (senary): Must enter a matching Y value (senary).
+Enter Y Value (senary): Enter X Value (senary): --------------------------------------------------
+
+Program Results
+
+Sorted X List: 
+3  5  8  62  64  97  118  125  177  645  
+781  
+
+   X Minimum =             3
+    X Median =            97
+   X Maximum =           781
+       X Sum =          2085
+   X Average =           189
+
+Sorted Y List: 
+-2443  -56  25  40  56  61  61  63  127  151  
+9575  
+
+   Y Minimum =         -2443
+    Y Median =            61
+   Y Maximum =          9575
+       Y Sum =          7660
+   Y Average =           696
+
+Linear Regression Values 
+ b0 =  -816
+ b1 =  8
+

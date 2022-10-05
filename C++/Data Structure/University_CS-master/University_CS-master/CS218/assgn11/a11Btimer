@@ -1,0 +1,91 @@
+#!/bin/bash
+
+# Assignment #11 B execution timing script.
+#
+# -----------------------------------------------------
+# Initial checks.
+#	Ensure asst #11 executable file exists.
+#	Ensure test file exists
+#
+if [ -z $1 ]; then
+	echo "Usage:  ./a11Btimer <executable11A> <executable11B>"
+	exit
+fi
+#
+if [ -z $1 ]; then
+	echo "Error, must provide executable file name."
+	exit
+fi
+#
+if [ ! -e $1 ] || [ ! -x $1 ]; then
+	echo "Error, unable to find $1 executable file."
+	exit
+fi
+#
+if [ -z $2 ]; then
+	echo "Error, must provide executable file name."
+	exit
+fi
+#
+if [ ! -e $2 ] || [ ! -x $2 ]; then
+	echo "Error, unable to find $1 executable file."
+	exit
+fi
+#
+if [ ! -e plot.list ]; then
+	echo "Error, unable to find input test files."
+	exit
+fi
+#
+# -----------------------------------------------------
+# Display header
+#
+bolded=`tput bold`
+normal=`tput sgr0`
+echo -e "\\n${bolded}Assignment #11 B Timed Executions${normal}\\n"
+#
+# -----------------------------------------------------
+# Original (large buffer)
+#
+echo -e "Starting Large Buffer Timed Executions\\n"
+echo "***************************************" > a11Btimes.txt
+echo -e "Large Buffer Timed Executions" >> a11Btimes.txt
+echo -e "\\n-------------------" >> a11Btimes.txt
+echo "Timed Test #1" >> a11Btimes.txt
+(time ./$1 -w the -ic -f plot.list ) 2>> a11Btimes.txt
+echo -e "\\n-------------------" >> a11Btimes.txt
+echo "Timed Test #2" >> a11Btimes.txt
+(time ./$1 -w the -ic -f plot.list ) 2>> a11Btimes.txt
+echo -e "\\n-------------------" >> a11Btimes.txt
+echo "Timed Test #3" >> a11Btimes.txt
+(time ./$1 -w the -ic -f plot.list ) 2>> a11Btimes.txt
+#
+# -----------------------------------------------------
+# Modified (small buffer)
+#
+echo
+echo
+echo -e "Starting Small Buffer Timed Executions\\n"
+echo -e "\\n\\n***************************************" >> a11Btimes.txt
+echo -e "Small Buffer Timed Executions" >> a11Btimes.txt
+echo -e "\\n-------------------" >> a11Btimes.txt
+echo "Timed Test #1" >> a11Btimes.txt
+(time ./$2 -w the -ic -f plot.list ) 2>> a11Btimes.txt
+echo -e "\\n-------------------" >> a11Btimes.txt
+echo "Timed Test #2" >> a11Btimes.txt
+(time ./$2 -w the -ic -f plot.list ) 2>> a11Btimes.txt
+echo -e "\\n-------------------" >> a11Btimes.txt
+echo "Timed Test #3" >> a11Btimes.txt
+(time ./$2 -w the -ic -f plot.list ) 2>> a11Btimes.txt
+echo  >> a11Btimes.txt
+echo  >> a11Btimes.txt
+#
+# -----------------------------------------------------
+# Done
+#
+rm tmp.tmp
+#
+echo "Timed Tests completed."
+echo "See ${bolded}a11Btimes.txt${normal} results."
+echo
+

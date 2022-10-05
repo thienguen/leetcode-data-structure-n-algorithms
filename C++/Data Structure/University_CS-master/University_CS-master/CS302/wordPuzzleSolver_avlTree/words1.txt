@@ -1,0 +1,7 @@
+Simple Puzzle, Words #1
+4
+e e c a
+a l e p
+h n b o
+q t t y
+

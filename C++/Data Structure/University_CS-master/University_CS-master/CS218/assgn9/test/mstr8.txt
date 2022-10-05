@@ -1,0 +1,33 @@
+--------------------------------------------------
+CS 218 - Assignment #9
+
+Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Error, user input exceeded length, input ignored. Please re-enter.
+Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Error, user input exceeded length, input ignored. Please re-enter.
+Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): --------------------------------------------------
+
+Program Results
+
+Sorted X List: 
+-3  1  5  7  8  15  16  26  33  64  
+80  80  94  177  4490  
+
+   X Minimum =            -3
+    X Median =            26
+   X Maximum =          4490
+       X Sum =          5093
+   X Average =           339
+
+Sorted Y List: 
+-4  0  2  9  17  33  63  89  94  137  
+166  249  418  7438  11067  
+
+   Y Minimum =            -4
+    Y Median =            89
+   Y Maximum =         11067
+       Y Sum =         19778
+   Y Average =          1318
+
+Linear Regression Values 
+ b0 =  640
+ b1 =  2
+

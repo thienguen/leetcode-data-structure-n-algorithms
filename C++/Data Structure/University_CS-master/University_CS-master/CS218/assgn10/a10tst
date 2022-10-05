@@ -1,0 +1,262 @@
+# Initial checks.
+#   Ensure executable file exists.
+
+if [ -z $1 ]; then
+    echo "Error, must provide executable file name."
+    exit
+fi
+#
+if [ ! -e $1 ] || [ ! -x $1 ]; then
+    echo "Error, unable to find $1 executable file."
+    exit
+fi
+#
+# ---------------------------------------------------------
+# Define script variables and function
+#
+bolded=`tput bold`
+normal=`tput sgr0`
+#
+pause() {
+    if [ "$1" = "skip" ]; then
+        echo
+    else
+        echo
+        echo -n "Press return to continue"
+        read
+        clear
+    fi
+}
+#
+# ---------------------------------------------------------
+# Display initial page
+#
+clear
+echo
+echo
+echo ${bolded}Assignment 10 - Error Testing Utility${normal}
+echo
+echo
+echo
+echo "Various tests should generate appropriate error messages."
+echo
+echo
+echo "Note, this utility assumes the program is working or very"
+echo "      close to working.  Testing on an incomplete"
+echo "      program will not be useful."
+echo
+echo
+pause $2
+#
+# ---------------------------------------------------------
+# Begin tests.
+#
+echo
+echo "------------------------------------"
+echo "Error testing -> usage message"
+echo "     ./$1 should show usage message"
+echo
+echo
+echo ${bolded}$1${normal}
+./$1
+echo
+#
+echo ${bolded}$1${normal}
+./$1     
+echo
+#
+pause $2
+# ----------------------
+#
+echo "------------------------------------"
+echo "Error testing -> wrong number of command line arguments"
+echo "     $1 should show error message for invalid or "
+echo "        incomplete number of arguments."
+echo
+echo
+echo ${bolded}$1 -sp${normal}
+./$1 -sp
+echo
+#
+echo ${bolded}$1 -sp 5 -dc 1103${normal}
+./$1 -sp 5 -dc 1103
+echo
+#
+echo ${bolded}$1 -sp 15 -d c 1354104520 -bk 0${normal}
+./$1 -sp 15 -d c 1354104520 -bk 0
+echo
+#
+echo ${bolded}$1 -sp 15 -dc 1354104520 -bk 3 0${normal}
+./$1 -sp 15 -dc 1354104520 -bk 3 0
+echo
+#
+pause $2
+# ----------------------
+#
+echo "------------------------------------"
+echo "Error testing -> wrong or bad specifiers"
+echo "     $1 should show error message for incorrect speed."
+echo
+echo
+#
+echo ${bolded}$1 sp 15 -dc 1354104520 -bk 0${normal}
+./$1 sp 15 -dc 1354104520 -bk 0
+echo
+#
+echo ${bolded}$1 -ps 15 -dc 1354104520 -bk 0${normal}
+./$1 -ps 15 -dc 1354104520 -bk 0
+echo
+#
+echo ${bolded}$1 - 15 -dc 1354104520 -bk 0${normal}
+./$1 - 15 -dc 1354104520 -bk 0
+echo
+#
+echo ${bolded}$1 -spp 15 -dc 1354104520 -bk 0${normal}
+./$1 -spp 15 -dc 1354104520 -bk 0
+echo
+#
+pause $2
+# ----------------------
+#
+echo "------------------------------------"
+echo "Error testing -> wrong or bad specifiers"
+echo "     $1 should show error message for draw color."
+echo
+echo
+#
+echo ${bolded}$1 -sp 15 dc 1354104520 -bk 0${normal}
+./$1 -sp 15 dc 1354104520 -bk 0
+echo
+#
+echo ${bolded}$1 -sp 15 -ed 1354104520 -bk 0${normal}
+./$1 -sp 15 -ed 1354104520 -bk 0
+echo
+#
+echo ${bolded}$1 -sp 15 - 1354104520 -bk 0${normal}
+./$1 -sp 15 - 1354104520 -bk 0
+echo
+#
+echo ${bolded}$1 -sp 15 -dcc 1354104520 -bk 0${normal}
+./$1 -sp 15 -dcc 1354104520 -bk 0
+echo
+#
+pause $2
+# ----------------------
+#
+echo "------------------------------------"
+echo "Error testing -> wrong or bad specifiers"
+echo "     $1 should show error message for background color."
+echo
+echo
+#
+echo ${bolded}$1 -sp 15 -dc 1354104520 bk 0${normal}
+./$1 -sp 15 -dc 1354104520 bk 0
+echo
+#
+echo ${bolded}$1 -sp 15 -dc 1354104520 -b 0${normal}
+./$1 -sp 15 -dc 1354104520 -b 0
+echo
+#
+echo ${bolded}$1 -sp 15 -dc 1354104520 kb- 0${normal}
+./$1 -sp 15 -dc 1354104520 kb- 0
+echo
+#
+echo ${bolded}$1 -sp 15 -dc 1354104520 -bkk 0${normal}
+./$1 -sp 15 -dc 1354104520 -bkk 0
+echo
+#
+pause $2
+# ----------------------
+#
+echo "------------------------------------"
+echo "Error testing -> incorrect ranges"
+echo "     $1 should show error message for various"
+echo "         out-of-range values."
+echo
+echo
+#
+echo ${bolded}$1 -sp 0 -dc 1354104520 -bk 0${normal}
+./$1 -sp 0 -dc 1354104520 -bk 0
+echo
+#
+echo ${bolded}$1 -sp 4345 -dc 1354104520 -bk 0${normal}
+./$1 -sp 4345 -dc 1354104520 -bk 0
+echo
+#
+echo ${bolded}$1 -sp 25 -dc 1355332144 -bk 0${normal}
+./$1 -sp 25 -dc 1355332144 -bk 0
+echo
+#
+echo ${bolded}$1 -sp 25 -dc 2355332143 -bk 0${normal}
+./$1 -sp 25 -dc 2355332143 -bk 0
+echo
+#
+echo ${bolded}$1 -sp 25 -dc 0 -bk 1355332144${normal}
+./$1 -sp 25 -dc 0 -bk 1355332144
+echo
+#
+pause $2
+# ----------------------
+#
+echo "------------------------------------"
+echo "Error testing -> bad values"
+echo "     $1 should show error message for incorrect values."
+echo
+echo
+#
+echo ${bolded}$1 -sp 1x -dc 1354104520 -bk 0${normal}
+./$1 -sp 1x -dc 1354104520 -bk 0
+echo
+#
+echo ${bolded}$1 -sp 17 -dc 1354104520 -bk 0${normal}
+./$1 -sp 17 -dc 1354104520 -bk 0
+echo
+#
+echo ${bolded}$1 -sp 25 -dc 1354109520 -bk 0${normal}
+./$1 -sp 25 -dc 1354109520 -bk 0
+echo
+#
+echo ${bolded}$1 -sp 15 -dc 1354104520 -bk 1*2${normal}
+./$1 -sp 15 -dc 1354104520 -bk 1*2
+echo
+#
+echo ${bolded}$1 -sp 15 -dc 1354104520 -bk 16${normal}
+./$1 -sp 15 -dc 1354104520 -bk 16
+echo
+#
+pause $2
+echo
+echo "Error testing -> draw and background same value"
+echo "     $1 should show error message for draw and "
+echo "        background colors the same."
+echo
+echo
+#
+echo ${bolded}$1 -sp 15 -dc 0 -bk 0${normal}
+./$1 -sp 15 -dc 0 -bk 0
+echo
+#
+echo ${bolded}$1 -sp 15 -dc 1354104520 -bk 1354104520${normal}
+./$1 -sp 15 -dc 1354104520 -bk 1354104520
+echo
+#
+echo ${bolded}$1 -sp 15 -dc 1103 -bk 1103${normal}
+./$1 -sp 15 -dc 1103 -bk 1103
+echo
+#
+pause $2
+#
+# ---------------------------------
+# OK, final test is to display image
+#
+echo "------------------------------------"
+echo "Final test -> display"
+echo "     $1 should show image from assignment handout"
+echo
+echo
+echo ${bolded}$1 -sp 15 -dc 1354104520 -bk 0${normal}
+pause $2
+./$1 -sp 15 -dc 1354104520 -bk 0
+
+
+

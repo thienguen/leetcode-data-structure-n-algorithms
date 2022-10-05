@@ -1,0 +1,13 @@
+
+*******************************************
+[1mProgram Start[0m
+
+Final Counter Value should be: 3540212035410
+
+--------------------------------------
+Compute Formula -> Non-Threaded
+ ...Thread 0 starting...
+ ...Thread 1 starting...
+Non-Threaded Counter -> Final Value: 1551512031411
+
+Completed.

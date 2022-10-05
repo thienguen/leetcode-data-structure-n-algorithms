@@ -1,0 +1,36 @@
+echo \n\n
+break last
+run
+set pagination off
+set logging file a4out.txt
+set logging overwrite
+set logging on
+set prompt
+echo -------------------------- \n
+echo display byte calculation variables \n
+echo lst: \t\t
+x/100dw &lst
+echo length: \t\t
+x/dw &length
+echo lstMin: \t\t
+x/dw &lstMin
+echo lstMid: \t\t
+x/dw &lstMid
+echo lstMax: \t\t
+x/dw &lstMax
+echo lstSum: \t\t
+x/dw &lstSum
+echo lstAve: \t\t
+x/dw &lstAve
+echo netCnt: \t\t
+x/dw &negCnt
+echo negSum: \t\t
+x/dw &negSum
+echo negAve: \t\t
+x/dw &negAve
+echo threeCnt: \t\t
+x/dw &threeCnt
+echo ThreeSum: \t\t
+x/dw &threeSum
+echo ThreeAve: \t\t
+x/dw &threeAve

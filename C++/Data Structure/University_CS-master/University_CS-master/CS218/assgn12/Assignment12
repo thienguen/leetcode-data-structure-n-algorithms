@@ -1,0 +1,38 @@
+lp0:
+	mov xmm0, qword[mv0]
+	divsd xmm0, qword[x]
+	addsd xmm0, qword[y]
+	movsd qword[mv0], xmm0
+	
+lp1:
+	movsd xmm0, qword[mv1]
+	divsd xmm0, qword[x]
+	addsd xmm0, qword[y]
+	movsd qword[mv1], xmm0
+
+add both
+
+---------------
+
+mov rax, SYS_write
+mov rdi, str
+mov rsi, 10
+syscall
+
+call os_write
+rip ->
+
+1) PUSH RA
+2) jump to addr
+
+| -------- |
+| OS       |              call function
+| free     |                ^
+| our code |  -> syscall    ^
+| free     |       v        ^
+| OS tables|  find addr ->  ^
+| -------- |
+
+Interrupt
+Descriptor
+Table (IDT)
