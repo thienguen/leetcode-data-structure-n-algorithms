@@ -1,7 +1,0 @@
-Simple Puzzle #2
-4
-a s f s
-h w i t
-c t a a
-l r i n
-

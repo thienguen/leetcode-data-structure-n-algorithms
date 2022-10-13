@@ -1,5 +1,0 @@
---------------------------------------------------
-CS 218 - Assignment #9
-
-Enter X Value (senary): Enter Y Value (senary): Enter X Value (senary): Error, not enough numbers entered.
-Program terminated.
