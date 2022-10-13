@@ -1,5 +1,6 @@
 #include "screen.h"
 #include "math.h"
+#include <ranges>
 
 #define main SDL_main
 

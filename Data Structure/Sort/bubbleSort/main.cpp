@@ -3,6 +3,7 @@
 #include <random>
 #include <algorithm>
 #include <iostream>
+#include <ranges>
 
 #define main SDL_main
 
