@@ -7,6 +7,19 @@
 
 #define main SDL_main
 
+std::vector<int> generateRandomVector(int size, int min, int max)
+{
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(min, max);
+    std::vector<int> vec(size);
+    std::generate(vec.begin(), vec.end(), [&] 
+    { 
+        return dis(gen); 
+    });
+    return vec;
+}
+
 void draw_state(std::vector<int> &v, SDL_Renderer *renderer, long red, long blue)
 {
     int current_x = 0;
@@ -25,16 +38,16 @@ void draw_state(std::vector<int> &v, SDL_Renderer *renderer, long red, long blue
             SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
         }
 
-                            ///* Bars *///
+        ///* Bars *///
         SDL_RenderDrawLine(renderer, current_x, 99, current_x, i);
 
-                    ///* Scatter plot style *///
+        ///* Scatter plot style *///
         // SDL_RenderDrawLine(renderer, current_x, i, current_x, i);
         current_x += 1;
     }
 }
 
-int main(int argv, char** args)
+int main(int argv, char **args)
 {
     std::random_device rd;
     std::uniform_int_distribution<int> d(1, 99);
@@ -65,7 +78,7 @@ int main(int argv, char** args)
             SDL_Delay(2);
         }
     }
-	
+
     for (int i : v)
     {
         std::cout << i << " ";
