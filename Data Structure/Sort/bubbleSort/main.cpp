@@ -38,10 +38,10 @@ void draw_state(std::vector<int> &v, SDL_Renderer *renderer, long red, long blue
             SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
         }
 
-        ///* Bars *///
+                            ///* Bars *///
         SDL_RenderDrawLine(renderer, current_x, 99, current_x, i);
 
-        ///* Scatter plot style *///
+                    ///* Scatter plot style *///
         // SDL_RenderDrawLine(renderer, current_x, i, current_x, i);
         current_x += 1;
     }

@@ -1,6 +1,10 @@
 {
     "files.associations": {
         "*.asm": "asm-intel-x86-generic",
-        "algorithm": "cpp"
-    }
+        "algorithm": "cpp",
+        "ranges": "cpp",
+        "random": "cpp",
+        "limits": "cpp"
+    },
+    "workbench.colorTheme": "One Dark Darker"
 }
