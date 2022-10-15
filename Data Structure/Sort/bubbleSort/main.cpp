@@ -5,7 +5,6 @@
 #include <iostream>
 #include <ranges>
 
-#define main SDL_main
 
 std::vector<int> generateRandomVector(int size, int min, int max)
 {
@@ -39,10 +38,10 @@ void draw_state(std::vector<int> &v, SDL_Renderer *renderer, long red, long blue
         }
 
                             ///* Bars *///
-        SDL_RenderDrawLine(renderer, current_x, 99, current_x, i);
+        // SDL_RenderDrawLine(renderer, current_x, 99, current_x, i);
 
                     ///* Scatter plot style *///
-        // SDL_RenderDrawLine(renderer, current_x, i, current_x, i);
+        SDL_RenderDrawLine(renderer, current_x, i, current_x, i);
         current_x += 1;
     }
 }
