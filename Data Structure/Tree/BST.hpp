@@ -9,7 +9,6 @@
 #include <mutex>
 #include <algorithm>
 
-template <class T>
 class BinarySearchTree
 {
 public:
@@ -34,15 +33,15 @@ public:
 
     /// EFFECTS:  Returns whether the given item is contained in this
     ///           tree.
-    bool contains(const T &value) const;
+    bool contains(const int &value) const;
 
     /// REQUIRES: value, and the damn node
     /// EFFECT:  Insert the exact location in the tree
-    void insert(const T &value, BinarySearchTree &node);
+    void insert(const int &value, BinarySearchTree &node);
 
     /// REQUIRES: value is in this tree, and the damn node
     /// EFFECT:  Removes the given item from this tree.
-    void remove(const T &value, BinarySearchTree &node);
+    void remove(const int &value, BinarySearchTree &node);
 
     /// EFFECTS:  Prints the contents of this tree, from this nodedown
     void print(BinarySearchTree &node) const;
@@ -58,12 +57,12 @@ private:
     // Represents a single node of a tree.
     struct Node
     {
-        T data;
+        int data;
         Node *left;
         Node *right;
         // INVARIANTS: left and right are either null or pointers to
         //             valid Nodes
-        Node(const T &data) : data(data), left(nullptr), right(nullptr) {}
+        Node(const int &data) : data(data), left(nullptr), right(nullptr) {}
     };
 
     // The root node of this tree.
@@ -73,11 +72,6 @@ private:
 
 /// ---------------------- Implementation ---------------------- ///
 /// ---------------------- Implementation ---------------------- ///
-
-
-
-
-
 
 
 
