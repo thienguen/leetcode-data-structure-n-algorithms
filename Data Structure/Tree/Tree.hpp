@@ -97,7 +97,8 @@ BinarySearchTree<T>::BinarySearchTree() : root(nullptr){};
 template <typename T>
 BinarySearchTree<T>::BinarySearchTree(const BinarySearchTree &other) : root(nullptr)
 {
-    *this = other;
+    /// TODO: Copy the contents of the other tree into this tree.
+
 }
 
 /// @tparam T
@@ -196,22 +197,6 @@ void BinarySearchTree<T>::insert(const T &value)
 }
 
 /// @tparam T
-/// EFFECT: revmove the given node from the tree
-/// @param value
-template <typename T>
-void BinarySearchTree<T>::remove(const T &value)
-{
-    if (root == nullptr)
-    {
-        return;
-    }
-    else
-    {
-        remove(value, root);
-    }
-}
-
-/// @tparam T
 /// EFFECT: Copy the data below the specifies node into newNodes
 /// @param other
 /// @param node
@@ -234,6 +219,40 @@ void BinarySearchTree<T>::copy(BinarySearchTree &other, BinarySearchTree &node)
         copy(other, node->right);
     }
 }
+
+
+template <typename T>
+void BinarySearchTree<T>::print() const
+{
+    if (root != nullptr)
+    {
+        std::cout << root->data << std::endl;
+        print(root->left);
+        print(root->right);
+    }
+}
+
+template <typename T>
+void BinarySearchTree<T>::print(BinarySearchTree &node) const
+{
+    if (node != nullptr)
+    {
+        std::cout << node->data << std::endl;
+        print(node->left);
+        print(node->right);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #endif
 

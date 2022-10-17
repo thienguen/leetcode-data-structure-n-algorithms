@@ -27,5 +27,17 @@
     "**/.*/**",
     "**/.vscode",
     "**/.vscode/**"
-  ]
+  ],
+  "files.associations": {
+    "*.asm": "asm-intel-x86-generic",
+    "*.tcc": "cpp",
+    "cstdio": "cpp",
+    "deque": "cpp",
+    "string": "cpp",
+    "vector": "cpp",
+    "functional": "cpp",
+    "type_traits": "cpp",
+    "unordered_map": "cpp",
+    "ostream": "cpp"
+  }
 }

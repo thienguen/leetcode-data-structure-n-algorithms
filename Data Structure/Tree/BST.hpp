@@ -92,39 +92,4 @@ private:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// write two for loops have quadratic complexity
-// one for loop has linear complexity
-// one for loop has constant complexity
-// one for loop has log complexity
-// one for loop has n log n complexity
-
-for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) {
-        // do something
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 #endif
