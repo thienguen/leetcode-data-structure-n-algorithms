@@ -36,7 +36,7 @@ void list_print(const Node *first, const Node *last)
 
     std::cout << '{';
 
-    for (auto current = first; current != nullptr; current = current = current->link)
+    for (auto current = first; current != nullptr; current = current->link)
     {
         std::cout << separator << current->info;
         *separator = ',';

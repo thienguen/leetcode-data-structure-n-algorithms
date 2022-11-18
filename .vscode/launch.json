@@ -7,8 +7,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/dreams/Coding/LeetCode/C++/1.Easy",
-      "program": "/home/dreams/Coding/LeetCode/C++/1.Easy/build/Debug/outDebug",
+      "cwd": "/mnt/c/Users/nvktv/Downloads/Learning/ComputerScience/LeetCode/From The Internet",
+      "program": "/mnt/c/Users/nvktv/Downloads/Learning/ComputerScience/LeetCode/From The Internet/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
