@@ -120,7 +120,7 @@
     "**/.vscode",
     "**/.vscode/**"
   ],
-  "C_Cpp.intelliSenseEngineFallback": "Enabled",
+  "C_Cpp.intelliSenseEngineFallback": "Disabled",
   "C_Cpp.errorSquiggles": "Enabled",
   "problems.showCurrentInStatus": true
 }

@@ -16,12 +16,14 @@ int partition(int arr[], int l, int h)
 	int i = l;
 	int j = h - 1;
 	int swap = 0;
+
 	while (i <= j)
 	{
 		while (arr[i] < pivot)
 			i++;
 		while (arr[j] > pivot)
 			j--;
+	
 		// swap the elements
 		if (i <= j)
 		{
@@ -32,6 +34,7 @@ int partition(int arr[], int l, int h)
 			j--;
 		}
 	}
+	
 	// swap the pivot element
 	swap = arr[h];
 	arr[h] = arr[i];

@@ -142,6 +142,7 @@ Iter cs202::largest(Iter first, Iter last)
     }
 
     Iter temp = first;
+    
     if (*first > *largest(++temp, last))
     {
         return first;

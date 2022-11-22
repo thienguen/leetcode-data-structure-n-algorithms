@@ -14,7 +14,6 @@ struct Node
 // construct this
 Node *head = nullptr;
 
-
 /// @brief reverse a singly linked list
 /// @param head the head of the list
 /// @return the head of the reversed list
@@ -60,6 +59,9 @@ Node *Insert(Node *head, int data)
         }
         temp1->next = temp;
     }
+
+    temp = nullptr;
+
     return head;
 }
 
@@ -77,17 +79,21 @@ void printnodes(Node *head)
 
 void destroy(Node *head)
 {
-    auto current = nullptr;
     std::cout << "The memory being allocated is being destroy,"
               << " so no memory leak occure.\n\n";
+
+    Node *temp = head;
     while (head != nullptr)
+    {
         head = head->next;
+        delete temp;
+        temp = head;
+    }
 }
 
 int main()
 {
     Node *head = nullptr;
-    Node *current = nullptr;
 
     head = Insert(head, 4);
     head = Insert(head, 2);
@@ -95,7 +101,6 @@ int main()
     head = Insert(head, 10);
     head = Insert(head, 8);
 
-    current = head;
     printnodes(head);
     std::cout << " before reverse the list \n";
 

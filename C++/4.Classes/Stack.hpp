@@ -1,4 +1,4 @@
-/// @file "Stack.hpp"
+/// file "Stack.hpp"
 /// @author Thien Nguyen thiennguyen@.csn.edu
 
 #include "List.hpp"

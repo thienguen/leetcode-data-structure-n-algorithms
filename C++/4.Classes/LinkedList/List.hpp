@@ -286,16 +286,8 @@ List<T>::List(List<T> &&other)
 {
     // leave other in stable state
     other.head = other.tail = nullptr;
-
     other.count = 0;
 }
-
-/// @paragraph seconf-approach
-// template <class T>
-// List<T>::List(List<T>&& other)
-// :  head(std::exchange(other.head,  nullptr)),
-//    tail(std::exchange(other.tail,  nullptr)),
-//   count(std::exchange(other.count, 0)) {}
 
 /// @note comeback to fix later 4/2/2022
 /// initializer list
@@ -381,7 +373,7 @@ T &List<T>::front()
 template <class T>
 T &List<T>::back()
 {
-    return !empty() ? tail->data : throw std::logic_error("Help me_back")
+    return !empty() ? tail->data : throw std::logic_error("Help me_back");
 }
 
 /// clear the list
@@ -510,11 +502,8 @@ typename ::List<T>::iterator List<T>::erase(List<T>::iterator pos)
     }
 
     // delete the node;
-
     following = pos->next;
-
     delete pos.operator->();
-
     --count;
 
     return following;
