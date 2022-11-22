@@ -1,0 +1,18 @@
+ce 	cir 	cir 	cirs 	cirself
+co 	co 	cos 	cos 	coself
+cy 	cyr 	cyr 	cyrs 	cyrself
+ey 	em 	eir 	eirs 	emself
+he 	him 	his 	his 	himself
+hey 	hem 	heir 	heirs 	hemself
+ne 	nem 	nir 	nirs 	nemself
+qui 	quem 	quis 	quis 	quemself
+she 	her 	her 	hers 	herself
+sie 	hir 	hir 	hirs 	hirself
+tey 	tem 	teir 	teirs 	temself
+they 	them 	their 	theirs 	themself
+xe 	xem 	xyr 	xyrs 	xemself
+xie 	hir 	hir 	hirs 	hirself
+yo 	yo 	yos 	yos 	yoself
+ze 	zir 	zir 	zirs 	zirself
+ve 	vis 	ver 	ver 	verself
+
