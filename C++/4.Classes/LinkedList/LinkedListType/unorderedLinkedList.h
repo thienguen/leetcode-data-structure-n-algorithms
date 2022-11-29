@@ -90,13 +90,11 @@ void unorderedLinkedList<t>::deleteNode(const t &value)
     {
         if (first == last)
         {
-            first = nullptr;
-            last = nullptr;
+            first = last = nullptr;
         }
         else
-        {
             first = first->link;
-        }
+
         delete temp;
         count--;
     }
