@@ -122,5 +122,7 @@
   ],
   "C_Cpp.intelliSenseEngineFallback": "Disabled",
   "C_Cpp.errorSquiggles": "Enabled",
-  "problems.showCurrentInStatus": true
+  "problems.showCurrentInStatus": true,
+  "files.autoSave": "afterDelay",
+  "python.formatting.provider": "black"
 }
