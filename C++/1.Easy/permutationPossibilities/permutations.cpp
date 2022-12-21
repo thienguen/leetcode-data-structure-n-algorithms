@@ -55,6 +55,9 @@ int main()
 
         } while (next_permutation(temp, temp + size));
 
+        temp = nullptr;
+
+        outFile.close();
         inFile.close();
     }
     else
