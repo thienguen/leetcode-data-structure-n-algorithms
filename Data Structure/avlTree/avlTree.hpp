@@ -289,7 +289,7 @@ Node<T> *avlTree<T>::rightRotate(Node<T> *node)
 
 	node->nodeHeight = std::max(height(node->left), height(node->right)) + 1;
 	otherNode->nodeHeight = std::max(height(otherNode->left), height(otherNode->right)) + 1;
-	
+
 	node = otherNode;
 
 	return node;
