@@ -7,14 +7,19 @@ LeetCode-Data-Structure-n-Algorithms
 ├── Data Structure
 │   ├── avlTree
 │   ├── binaryHeap
+│   ├── Binary Tree
 │   ├── LinkedList
-│   │   ├── circularLinkedList
-│   │   ├── DoubleyLinkedList
-│   │   ├── LinkedListType (ordered, unordered)
+│   │   ├── Linked List
 │   │   ├── Simple_List
+│   │   ├── DoubleyLinkedList
+│   │   ├── circularLinkedList
+│   │   ├── LinkedListType (ordered, unordered)
 │   │   └── List.hpp (absolute Linked List Class)
 │   ├── Recursion
 │   └── Stack & Queue
+│   │   └── Priority Queue
+│   └── Vertex
+│   └── Hash Map
 └── Java
     ├── redo
     └── Projects
@@ -23,6 +28,8 @@ LeetCode-Data-Structure-n-Algorithms
 There is more, but since those are limited due to `cough, cough`, Those will be post on a later day, They will be under C++ I, II and III. [Integrated]
 
 ## C++
+
+a collection of leet code like questions, and some of math class stuff.
 
 ## Data Structure
 
